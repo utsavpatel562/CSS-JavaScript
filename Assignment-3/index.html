@@ -1,0 +1,161 @@
+<!-- Code by Utsav Patel -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JavaScript">
+    <meta name="author" content="Utsav Patel">
+    <!-- link to display website logo 'logo.png' -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <!-- link to add CSS file to page 'style.css' -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link to add JavaScript to page 'script.js' -->
+    <script src="scripts/script.js" type="text/javascript"></script>
+    <!-- Title of webpage -->
+    <title>Computer Programming</title>
+</head>
+
+<body>
+    <main>
+        <!-- Menu of this page -->
+        <div class="menu">
+            <b style="color:#fff;"> </b>Change Background:</b>
+            <button type="button" onclick="myFunction_btn1()">Burnt Sienna</button>
+            <button type="button" onclick="myFunction_btn2()">Hot Pink</button>
+            <button type="button" onclick="myFunction_btn3()">Hot Pink</button>
+            <button type="button" onclick="myFunction_btn4()">WhiteSmoke</button>
+        </div>
+        <!-- Main Section of this page -->
+        <section class="myMainSection">
+            <!-- Basic defination of computer programming -->
+            <h1><img src="images/code.png" alt="CODE" style="width: 26px;"> Introduction to programming</h1>
+            <p align="justify">Computer programming is the process of designing and writing computer programs. As a
+                skill set, it includes a wide variety
+                of different tasks and techniques, but our tutorials are not intended to teach you everything. Instead,
+                they are meant to
+                provide basic, practical skills to help you understand and write computer code that reflects things you
+                see and use in
+                the real world.
+            </p>
+            <center><img src="images/myimg.png" alt="Image One" class="myImg1"></center>
+            <h1 style="font-size: 25px;"><img src="images/know.png" alt="Know More" style="width: 21px;"> What you need
+                to
+                know</h1>
+            <p align="justify">Programming refers to a technological process for telling a computer which tasks to
+                perform in order to
+                solve problems. You can think of programming as a collaboration between humans and computers, in which
+                humans create
+                instructions for a computer to follow (code) in a language computers can understand. Our computer
+                programming tutorials
+                assume that you have no programming experience whatsoever. </p>
+            <ul style="font-size: 18px; color: #fff;">
+                <li>Update existing software programs in order to fix bugs or patch security vulnerabilities.</li>
+                <li>Rewrite existing code to move it from one programming language to another.</li>
+                <li>Test and troubleshoot existing code for errors.</li>
+                <li>Write and test code for programs and apps.</li>
+            </ul><br>
+            <!-- OnClick Event is using JavaScript -->
+            <button onclick="myFunction_two()" class="mybtn">Visit Offical Website</button>
+            <p id="demo2"></p><br>
+        </section>
+        <!-- Side part of the section -->
+        <section class="mySubSection">
+            <!-- This Accordian Using JavaScript -->
+            <h2><img src="images/list.png" alt="List" style="width: 18px; margin-right:2px;"> List of Programming
+                Languages</h2>
+            <button class="accordion">Web-Based Starups <img src="images/dropdown-arrow.png" width="18px;"
+                    style="float: right;"></button>
+            <div class="accordion-content">
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <button class="accordion">Data Analytics Programs <img src="images/dropdown-arrow.png" width="18px;"
+                    style="float: right;"></button>
+            <div class="accordion-content">
+                <ul>
+                    <li>R</li>
+                    <li>MATALAB</li>
+                </ul>
+            </div>
+            <button class="accordion">Large Companies <img src="images/dropdown-arrow.png" width="18px;"
+                    style="float: right;"></button>
+            <div class="accordion-content">
+                <ul>
+                    <li>C#</li>
+                    <li>Java</li>
+                    <li>PHP</li>
+                </ul>
+            </div>
+            <button class="accordion">Embedded Devices <img src="images/dropdown-arrow.png" width="18px;"
+                    style="float: right;"></button>
+            <div class="accordion-content">
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Rust</li>
+                </ul>
+            </div>
+            <button class="accordion">Cloud-Based Applications <img src="images/dropdown-arrow.png" width="18px;"
+                    style="float: right;"></button>
+            <div class="accordion-content">
+                <ul>
+                    <li>GO</li>
+                    <li>Scala</li>
+                </ul>
+            </div>
+            <button class="accordion">Mobile Application <img src="images/dropdown-arrow.png" width="18px;"
+                    style="float: right;"></button>
+            <div class="accordion-content">
+                <ul>
+                    <li>Swift</li>
+                    <li>Kotlin</li>
+                </ul>
+            </div>
+            <!-- This Subscribe Using JavaScript -->
+            <h2><img src="images/email.png" alt="List" style="width: 19px; margin-right:2px;"> Subscribe to Mail</h2>
+            <button onclick="myFunction()" class="mybtn">Subscribe Now</button>
+            <p id="demo"></p>
+        </section>
+        <!-- Contact Us Section -->
+        <section class="thirdSection" style="color: #fff;">
+            <h1>Contact me</h1>
+            <!-- Form for Contact Us form using JS -->
+            <form>
+                <input type="email" required autocomplete="off" placeholder="Email Address" name="email"><br>
+                <textarea cols="30" rows="5" placeholder="Enter Your Comment Here...." name="comment"></textarea><br>
+                <button class="mybtn">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+<footer>
+    <center><b style="color:#fff;"> </b>All rights are reserved to Utsav Patel - JavaScript Project</b></center>
+</footer>
+<!-- JavaScript for Accordian (List of Programming Language section) -->
+<script>
+    const accordionBtns = document.querySelectorAll(".accordion");
+
+    accordionBtns.forEach((accordion) => {
+        accordion.onclick = function () {
+            this.classList.toggle("is-open");
+
+            let content = this.nextElementSibling;
+            console.log(content);
+
+            if (content.style.maxHeight) {
+                //this is if the accordion is open
+                content.style.maxHeight = null;
+            } else {
+                //if the accordion is currently closed
+                content.style.maxHeight = content.scrollHeight + "px";
+                console.log(content.style.maxHeight);
+            }
+        };
+    });
+</script>
+
+</html>

@@ -1,0 +1,203 @@
+/* CSS file 'style.css' */
+body {
+    font-family: Calibri;
+    color: #333;
+    background-color: #151515;
+    margin: 0;
+    padding: 0;
+}
+/* Main Poster Image*/
+.posterImg img {
+    width: 1200px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+/* Poster Text and some descriptions */
+.text-effects{
+    position: absolute;
+    top: 98%;
+    left: 38%;
+    font-family: "Arial Black", Gadget, sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 10px #000;
+    color: #fff;
+}
+.text-effects-2{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    font-size: 1.6em;
+    color: #f3dbaa;
+    text-shadow: 1px 1px 0 #969696, 1px 13px 5px #aba8a8;
+}
+.text-effects-3{
+    position: absolute;
+    top: 1%;
+    left: 123%;
+    color: #f3dbaa;
+    text-shadow: 1px 1px 0 #969696, 1px 13px 5px #aba8a8;
+}
+.text-effects-4{
+    position: absolute;
+    top: 8%;
+    letter-spacing: 0.2ch;
+    left: -45%;
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #969696, 1px 13px 5px #aba8a8;
+}
+.text-effects-5{
+    font-family: Verdana, sans-serif;
+    position: absolute;
+    top: 47em;
+    font-weight: 900;
+    letter-spacing: 0.2ch;
+    left: 123%;
+    font-size: 18px;
+    color: #ff1e1e;
+    text-shadow: 1px 1px 0 #969696, 1px 13px 5px #aba8a8;
+}
+.text-effects-6{
+    position: absolute;
+    top: 46em;
+    font-weight: bolder;
+    letter-spacing: 0.2ch;
+    left: -45%;
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #969696, 1px 13px 5px #aba8a8;
+}
+
+/* design for tagline */
+.tagline {
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 1;
+}
+.mydiv {
+    width: 65%;
+    display: inline-block;
+}
+/* style for description and poster */
+main {
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* design to view in same align */
+#links2 {
+    width: 96%;
+    border-radius: 10px;
+    color: #efeeee;
+    display: inline-block;
+    background-color: #272626;
+    padding: 30px;
+    margin-top: 10px;
+}
+/* Adjusting poster height,width, display*/
+#poster {
+    display: inline-block;
+    max-width: 30%;
+    height: auto;
+}
+#description {
+    width: auto;
+    border-radius: 10px;
+    color: #efeeee;
+    display: inline-block;
+    background-color: #272626;
+    padding: 30px;
+}
+/* design for Poster image */
+#poster img {
+    border-radius: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px 2px rgba(0, 1, 0, 0.2);
+}
+h2,h3 {
+    color: #efeeee;
+    font-size: 26px;
+}
+a {
+    text-decoration: none;
+}
+/* design for two different buttons */
+.btn1 {
+    width: 90px;
+    margin-right: 10px;
+    height: 30px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #1f1f1f;
+    border: 1px solid #bbb9b9;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 1, 0, 0.2);
+}
+.btn2 {
+    width: 120px;
+    margin-right: 10px;
+    height: 35px;
+    cursor: pointer;
+    color: #010000;
+    background-color: #fbca06;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 1, 0, 0.2);
+}
+/* for user review */
+blockquote {
+    font-style: italic;
+    border-left: 2px solid #1a1a1a;
+    padding-left: 10px;
+}
+#links a {
+    display: block;
+    margin-bottom: 10px;
+    color: #0077cc;
+    text-decoration: none;
+}
+/* CSS for Top Cast section*/
+.cast {
+    width: 96%;
+    border-radius: 10px;
+    color: #efeeee;
+    display: inline-block;
+    background-color: #272626;
+    padding: 30px;
+    margin-top: 10px;
+}
+.cast img {
+    width: 100px;
+    height: 100px;
+    text-align: justify;
+    float: left;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.topcast {
+    display: inline-block;
+    margin-top: 10px;
+}
+.cast a {
+    color: #ccc;
+}
+.text {
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 16px;
+    float: left;
+}
+/* footer design */
+footer {
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+}

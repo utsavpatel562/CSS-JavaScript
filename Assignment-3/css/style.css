@@ -1,0 +1,144 @@
+/* CSS Code 'style.css' */
+body {
+    font-family: calibri;
+}
+/* CSS for Menu */
+.menu{
+    width: 98%;
+    padding: 10px;
+    background: rgb(1,0,6);
+    background: linear-gradient(74deg, rgba(1,0,6,1) 3%, rgba(59,105,3,1) 87%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+.menu button{
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    font-weight: 400;
+    margin-left: 5px;
+    background-color: #0289ba;
+}
+/* CSS for Main Section */
+.myMainSection {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 111, 1) 79%);
+    padding: 25px;
+    width: 60%;
+    float: left;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+}
+.myMainSection h1 {
+    color: #fdc440;
+    font-size: 35px;
+    letter-spacing: 0.5vmin;
+}
+.myMainSection p {
+    font-size: 18px;
+    color: #e6e5e5;
+}
+/* CSS design for IMAGE inside Main Section */
+.myMainSection .myImg1 {
+    width: 550px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 1px 15px -5px rgba(0, 0, 0, 0.23);
+}
+.mySubSection h2 {
+    color: #fdc440;
+    letter-spacing: 0.3vmin;
+}
+.mySubSection {
+    background: rgb(1, 0, 6);
+    background: linear-gradient(252deg, rgba(1, 0, 6, 1) 10%, rgba(142, 34, 34, 1) 79%);
+    color: #000;
+    font-weight: 600;
+    width: 31%;
+    height: 900px;
+    padding: 25px;
+    margin-left: 15px;
+    float: left;
+}
+/* CSS for Contact Us Section*/
+.thirdSection {
+    background: rgb(14,92,3);
+    background: linear-gradient(264deg, rgba(14,92,3,1) 0%, rgba(119,33,122,1) 100%);
+    color: #000;
+    font-weight: 600;
+    width: 60%;
+    padding: 25px;
+    float: left;
+}
+/* CSS for Contact Us Form */
+input[type=email] {
+    width: 50%;
+    padding: 14px 22px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+textarea{
+    width: 50%;
+    padding: 14px 22px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* CSS of Accordian inside SubSection */
+button.accordion {
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+button.accordion:hover, button.accordion.is-open {
+    background-color: #ddd;
+}
+.accordion-content {
+    background-color: white;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+/* CSS for Buttons */
+.myMainSection .mybtn ,.mySubSection .mybtn, form .mybtn{
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: #2aa703;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    box-shadow: 0px 10px 12px -7px #000000, 5px 15px 25px -5px rgba(0,0,0,0.45);
+}
+/* CSS for FOOTER */
+footer{
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    width: 97%;
+    font-size: 20px;
+    padding: 10px;
+    height: 25px;
+    top: 1400px;
+}
